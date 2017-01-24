@@ -21,6 +21,6 @@ If the files you are comparing can both be reached on ome system then you should
 
 If you can print out the files, or overlay them on the same screen then you eyes have a good chance of spotting any differences. This technique is know as *blink diff* and it's long been used by astronomers to find planets and asteroids. If you cannot get the files on the same screen, then `linesum.py` will be more reliable.
 
-## Could you add feature <x>?
+## Could you add feature \<x\>?
 
 Maybe, but having a very low character count is a major feature - people sometimes have to type this in by hand. `linesum.py` reaches parts that `pip install` can't.
