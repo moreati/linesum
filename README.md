@@ -14,7 +14,7 @@ ca5b import hashlib
 2314 h = hashlib.sha256()
 f1b3 for line in fileinput.input():
 7b0f     h.update(line)
-63f8     print '%s %s' % (h.hexdigest()[:4], line),
+db6c     print h.hexdigest()[:4], line,
 ```
 
 ## Why not use `diff`?
