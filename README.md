@@ -2,7 +2,7 @@
 
 Have you ever needed to compare two files on two disconnected computers, and had to do it by eye? Then read on.
 
-`linesum.py` is a short script that prints each line of a file, plus a running digest. If any line differs between the two files, then that line's digest plus every following digest will also be different. This makes it much easier to spot (and correct) than by a purely visual comparison.
+`linesum.py` is a short script that prints each line of a file, plus a running digest. If any line differs between the two files, then that line's digest plus every following digest will also be different. This makes it much easier to spot (and correct) typos than just by eyeball.
 
 The script only requires Python 2.x. It's short enough to type out by hand. Then run a it like so
 
