@@ -1,8 +1,10 @@
 # Linesum
 
-Have you ever needed to compare two files on two disconnected computers, when your only option is doing by eyeball? Then read on.
+'linesum.py` prints a line by line checksum of a file, to help spot changes.
 
-`linesum.py` is a short script that prints each line of a file, plus a running digest. If a line differs between the two files, then that line's digest plus every following digest will also be different. This makes it much easier to spot (and correct) than by a purely visual comparison.
+Have you ever needed to compare two files on disconnected computers, when your only option is doing by eyeball? Then read on.
+
+`linesum.py` prints each line of a file, plus a running sha256 digest. If a line differs between the two files, then that line's digest plus every following digest will be different. This makes it much easier to spot any changes.
 
 The script just needs Python 2.x or 3.x. It's short enough to type out by hand.
 
