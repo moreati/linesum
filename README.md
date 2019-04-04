@@ -4,17 +4,19 @@ Have you ever needed to compare two files on two disconnected computers, when yo
 
 `linesum.py` is a short script that prints each line of a file, plus a running digest. If a line differs between the two files, then that line's digest plus every following digest will also be different. This makes it much easier to spot (and correct) than by a purely visual comparison.
 
-The script only requires Python 2.x. It's short enough to type out by hand. Then run a it like so
+The script just needs Python 2.x or 3.x. It's short enough to type out by hand.
+
+Run it like so
 
 ```
 $ python linesum.py < linesum.py 
-11b7 import fileinput
-ca5b import hashlib
-12e1 
-2314 h = hashlib.sha256()
-f1b3 for line in fileinput.input():
-7b0f     h.update(line)
-db6c     print h.hexdigest()[:4], line,
+6aaa from __future__ import print_function
+527c import fileinput, hashlib
+907d 
+10bf h = hashlib.sha256()
+4f25 for line in fileinput.input(mode='rb'):
+c18b     h.update(line)
+e151     print(h.hexdigest()[:4], line.decode('utf-8'), end='')
 ```
 
 ## Why not use `diff`?
